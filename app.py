@@ -27,8 +27,8 @@ print(f"CPU Usage: {psutil.cpu_percent(interval=1)}%")
 memory = psutil.virtual_memory().used // 1024 ** 2
 print(f"Memory Usage: {memory} MB")
 
-APP:app
 app = Flask(__name__)
+APP = app
 
 @app.route('/')
 def home():
