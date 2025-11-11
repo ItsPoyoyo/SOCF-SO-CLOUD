@@ -9,8 +9,8 @@ names = "Hussein Ali El Gazouini, Hassan Ali El Gazouini"
 
 x_names = {
     "name1": "Hussein Ali El Gazouini",
-    "name2": "Hussein Ali El Gazouini",
-    "name3": "Hussein Ali El Gazouini",
+    "name2": "Hassan Ali El Gazouini",
+    "name3": "Murilo Zimerman Fortaleza ",
 }
 
 # get OS information
@@ -27,8 +27,7 @@ print(f"CPU Usage: {psutil.cpu_percent(interval=1)}%")
 memory = psutil.virtual_memory().used // 1024 ** 2
 print(f"Memory Usage: {memory} MB")
 
-
-
+APP:app
 app = Flask(__name__)
 
 @app.route('/')
@@ -52,3 +51,7 @@ def get_metrics():
     }
 
     return json.dumps(metrics, indent=4)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
