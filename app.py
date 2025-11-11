@@ -5,7 +5,7 @@ import os
 import json
 
 
-names = "Hussein Ali El Gazouini, Hassan Ali El Gazouini"
+names = "Hussein Ali El Gazouini, Hassan Ali El Gazouini, Murilo Zimerman Fortaleza"
 
 x_names = {
     "name1": "Hussein Ali El Gazouini",
